@@ -89,8 +89,6 @@ func getTagName(currName, tag string) (newName string) {
 			if first {
 				newName = fmt.Sprintf("%s%s", newName, strings.ToLower(string(r)))
 				first = false
-			} else {
-				newName = fmt.Sprintf("%s_%s", newName, strings.ToLower(string(r)))
 			}
 		} else {
 			newName = fmt.Sprintf("%s%s", newName, string(r))
